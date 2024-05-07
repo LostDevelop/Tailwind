@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
+    <header class="bg-blue-500 dark:bg-gray-800 py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img src="logo.png" alt="Website Logo" class="h-12">
+
+            <!-- Navigation -->
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-200">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-200">Skills</a></li>
+                <li><a href="#services" class="hover:text-blue-200">Services</a></li>
+                <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+            </ul>
+
+            <!-- Toggle Mode -->
+            <button id="toggleBtn" class="toggle-btn bg-white dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded-full flex items-center justify-center">
+                <i class="far fa-sun mr-2 text-yellow-500 dark:text-yellow-500"></i>
+                <i class="far fa-moon dark:text-white"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="container mx-auto py-12">
+        <!-- Heading and intro text -->
+        <h2 class="text-3xl font-bold mb-4">Welcome to My Website</h2>
+        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam, velit sit amet aliquet
+            luctus.</p>
+
+        <!-- Profile image -->
+        <div class="mt-8">
+            <img src="profile.jpg" alt="Profile Image" class="rounded-full h-40 w-40 animate-bounce">
+        </div>
+
+        <!-- Social icons -->
+        <div class="flex mt-8 space-x-4">
+            <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Download resume button with hovering effect -->
+        <button class="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Download Resume</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-12">
+        <!-- Heading -->
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <!-- About content -->
+        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam, velit sit amet aliquet
+            luctus.</p>
+        <!-- Profile image -->
+        <img src="profile.jpg" alt="Profile Image" class="rounded-full h-40 w-40 mt-4">
+        <!-- Read more button -->
+        <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Read More</button>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-12">
+        <!-- Skills section heading -->
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <!-- Linear Progress bar -->
+        <div class="mt-4">
+            <!-- Use Tailwind CSS progress bar -->
+            <div class="w-full h-4 bg-gray-300 rounded-full">
+                <div class="bg-blue-500 h-4 rounded-full w-1/2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container mx-auto py-12">
+        <!-- Relevant certifications heading -->
+        <h2 class="text-3xl font-bold mb-4">Certifications</h2>
+        <!-- Certification cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Certification Title</h3>
+                <p>Description of the certification.</p>
+                <!-- Button to view certificate -->
+                <a href="certificate.pdf" target="_blank" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Certificate</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Certification Title</h3>
+                <p>Description of the certification.</p>
+                <!-- Button to view certificate -->
+                <a href="certificate.pdf" target="_blank" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Certificate</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Certification Title</h3>
+                <p>Description of the certification.</p>
+                <!-- Button to view certificate -->
+                <a href="certificate.pdf" target="_blank" class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="container mx-auto py-12">
+        <!-- Project section heading -->
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <!-- Project cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Project Title</h3>
+                <p>Description of the project.</p>
+                <!-- Button to view project -->
+                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Project</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Project Title</h3>
+                <p>Description of the project.</p>
+                <!-- Button to view project -->
+                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Project</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="border p-4 rounded-md shadow-md">
+                <h3 class="font-bold">Project Title</h3>
+                <p>Description of the project.</p>
+                <!-- Button to view project -->
+                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-12">
+        <!-- Contact section heading -->
+        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+        <!-- Name, email, message inputs -->
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="Your Name" class="p-2 border rounded-md">
+            <input type="email" placeholder="Your Email" class="p-2 border rounded-md">
+            <textarea placeholder="Your Message" rows="4" class="p-2 border rounded-md col-span-2"></textarea>
+            <button type="submit" class="col-span-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Submit</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-200 dark:bg-gray-800 py-4">
+        <div class="container mx-auto text-center">
+            <!-- Call & email buttons -->
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Call Now</button>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Email Me</button>
+        </div>
+    </footer>
+
+    <!-- JavaScript for toggling dark mode -->
+    <script>
+        const toggleButton = document.getElementById('toggleBtn');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+
+</html>
+
